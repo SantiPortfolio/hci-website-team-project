@@ -1,26 +1,26 @@
-.header {
-  color: #ffffff;
-  padding: 20px 20px;
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
-
-.search {
-  padding-left: 50%;
-  display: flex;
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(26, 27, 28);
+  color: white;
+  line-height: 1.6;
 }
 
-.topHeaderContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 .navbar {
-  position: absolute;
-  left: 29%;
+  display: flex;
+  align-items: center;
 }
 
 .items {
@@ -35,12 +35,12 @@
 .product {
   padding: 20px;
   border: 10px solid #BBBBBB;
-  border-radius: 10px;
+  border-radiusx: 10px;
   font-family: Arial;
   font-size: 16px;
   font-weight: bold;
+  color: white;
 }
-
 
 .itemsInCart {
   padding: 20px;
@@ -51,7 +51,6 @@
   font-weight: bold;
 }
 
-
 .navbar ul {
   display: flex;
   justify-content: space-around;
@@ -59,7 +58,9 @@
 }
 
 * {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbutton {
@@ -73,30 +74,24 @@
 }
 
 .navbar_button {
-  outline-color: white;
-  outline-style: solid;
-  outline-width: 2px;
-  background-color: rgb(6, 6, 6);
-  color: rgb(240, 243, 246);
-  border-radius: 8px;
-  height: 50px;
-  width: 140px;
-  font-size: 24px;
-  font-family: Arial;
-  margin-left: 5px;
+  background-color: rgb(26, 27, 28);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  /* Add border to enhance button appearance */
+  border-radius: 5px;
+  /* Rounded corners for buttons */
   transition-duration: 0.4s;
+  /*Animates the hover and unhovered transitions*/
+  font-size: 25px;
 }
 
 .navbar_button:hover {
-  background-color: grey
+  border-color: white;
+  /* Highlight on hover */
 }
-
-.navbar_button:active {
-  background-color: white;
-  color: black;
-}
-
-
 
 @keyframes flash {
   0% {
@@ -133,7 +128,6 @@
   /* visible */
 }
 
-
 .flash {
   animation: flash 2s;
   border-radius: 2px;
@@ -147,6 +141,8 @@
   text-align: center;
   width: 50%;
   margin: auto;
+  color: white;
+  font-size: 25px;
 }
 
 .product_button {
@@ -197,4 +193,92 @@
 
 .oldPrice {
   color: red;
+}
+
+body,
+button {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #149616;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0a7e07;
+}
+
+/*Contact CSS ->*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: rgb(26, 27, 28);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
 }

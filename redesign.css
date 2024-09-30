@@ -1,0 +1,141 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(26, 27, 28);
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-image {
+  width: 280px;
+  height: auto;
+  filter: invert(1);
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  /* Add border to enhance button appearance */
+  border-radius: 5px;
+  /* Rounded corners for buttons */
+  transition-duration: 0.4s;
+  /*Animates the hover and unhovered transitions*/
+  font-size: 18px;
+}
+
+.nav-list a:hover {
+  border-color: white;
+  /* Highlight on hover */
+}
+
+/* Banner */
+.banner {
+  background-color: #149616;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Featured Section */
+.featured-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.featured-item img {
+  width: 100%;
+  height: auto;
+}
+
+.featured-item p {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.hero-banner {
+  color: white;
+  height: 800px;
+  background-image: url("hero.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hero-text {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Anta";
+  margin-right: auto;
+  color: #1a7353;
+  position: relative;
+  text-shadow: 5px 5px 5px #a2fedc;
+}
+
+.hero-text button {
+  background-color: #4CAF50;
+  /* Green background color */
+  border: none;
+  /* Remove border */
+  color: white;
+  /* White text color */
+  padding: 20px 40px;
+  /* Add padding */
+  text-align: center;
+  /* Center text */
+  display: inline-block;
+  /* Display as inline-block */
+  font-size: 24px;
+  /* Font size */
+  margin-top: 100px;
+
+  /* Add some top margin */
+  cursor: pointer;
+  /* Add cursor on hover */
+  transition: background-color 0.3s;
+  /* Add smooth transition */
+
+}

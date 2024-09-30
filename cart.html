@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StepUp Shop</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.svg">
+</head>
+
+<body style="background-color:rgb(26,27,28);">
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="logo.svg"
+            style="width: 280px; height: auto; filter:invert(1); display: flex; justify-content: center;"></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html"><button class="navbar_button">Home</button></a></li>
+          <li><a href="shop.html"><button class="navbar_button">Shop</button></a> </li>
+          <li><a href="about.html"><button class="navbar_button">About</button></a></li>
+          <li><a href="contact.html"><button class="navbar_button">Contact</button></a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    </div>
+
+  </header>
+
+
+  <div class="itemsInCart" style="color: white;">
+  </div>
+
+  <div class="total" style="color: white;">
+    <h3>Total: £<span>0.00</span></h3>
+
+
+    <div class="voucher">
+      <input type="text" id="voucherCode" placeholder="Enter Voucher Code">
+      <button class="product_button" onclick="applyVoucher()">Apply Voucher</button>
+    </div>
+
+
+    <button class="product_button" onclick="login()">Checkout</button>
+    <br>
+    <div class="clear">
+      <button class="product_button">Clear Cart</button>
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>
